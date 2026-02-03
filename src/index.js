@@ -1,14 +1,24 @@
-const number = 15;
-
-if (number === 5 || number === 10 || number === 15) {
-  return;
+function analisarNumero(number) {
+  if (number === 15) {
+       console.log('É igual a 15');
+    return 
+  } else if (number % 5 === 0) {
+    console.log('função interrompida, pois o número é múltiplo de 5');
+    return 
+  } else if (number >= 10 && number <= 20) {
+    console.log('Está entre 10 e 20');
+    return 
+  } else {
+    console.log('Não está entre 10 e 20');
+    return 
+  }
 }
 
-number > 10 && number <= 20
-  ? console.log("O número está entre 10 e 20 inclusive")
-  : console.log(""); 
+const myarrai = [3, 6, 9, 12, 15, 18, 21, 24, 27, 30];
 
-number !== 15
-  ? console.log("O número não é 15")
-  : console.log(""); 
+const numero = 12;
+const resultado = analisarNumero(numero);
+console.log(resultado);
+console.log(myarrai)
+
 
